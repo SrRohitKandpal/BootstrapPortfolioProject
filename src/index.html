@@ -5,42 +5,102 @@
   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="main.css">
-  <title>HTML Portfolio</title>
+  <title>HTML Portfolio | Rohit Sharma</title>
 </head>
 <body>
-
-  <!--
-    Previous project placeholder begins
-  -->
-  <div class="header">
-    <h1>Morgan McCircuit</h1>
-    <h2>I write code</h2>
-  </div>
-
-  <div class="tagline">
-    <h3>Who I am</h3>
-    <p>Hi, my name is Morgan and I love to write code that is efficient.</p>
-  </div>
-
-
-  <div class="skills">
-    <h3>What I do</h3>
-    <p>Here are some of the languages I use on a day-to-day.</p>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ul>
-  </div>
-
-  <div class="contact">
-    <h3>Get in touch</h3>
-    <p>I live in the cloud and can't be seen. Send messages to the good people at <a target="_blank" href="https://twitter.com/codeschool">Code School</a> and they'll notify me.</p>
-  </div>
-  <!--
-    Previous project placeholder ends
-    (unused pieces will be deleted at the last task)
-  -->
+    <!-- NAVBAR-->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    Rohit Sharma
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END-OF-NAVBAR-->
+    <!-- ABOUT-CAROUSEL-->
+    <div id="portfolio-carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#portfolio-carousel" data-slide-to="1"></li>
+            <li data-target="#portfolio-carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Who Am I?</h1>
+                        <p>Hey, World! Myself Rohit Sharma. I'm 24 years old living in New Delhi, INDIA and working as a Web Designer from last 1.5 years.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>What I do?</h1>
+                        <p>I am a front-end developer who loves writing code that works well in different environments. I have very good knowledge of HTML, CSS and Responsive Web Design. Curious to learn JavaScript and other front end technologies soon this year #2017.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>What I've done?</h1>
+                        <p>I don't have an advanced portfolio of projects, but still I was able to create some small scale and couple of big ones projects which I have build sing HTML, CSS, JS, KQuery and bootstrap.</p>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#portfolio-carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#portfolio-carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        </div>
+    </div>
+    <!-- END-OF-ABOUT-CAROUSEL-->
+    <!-- USING-GRID-->
+    <div class="marketing">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <span class="glyphicon glyphicon-tint"></span>
+                    <h3>HTML/CSS</h3>
+                    <p>I have been doing this from a long time , so I'm prettu much comfortable now with HTML and CSS. However now I'm learning SASS and will also focus on other complier languages of HTMl like <strong>HAML</strong> </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <span class="glyphicon glyphicon-heart"></span>
+                    <h3>JavaScript</h3>
+                    <p>I haven't learnt JavaScript with depth yet, but now as I have decided to become a full-stack developer this year #2017, I will learn all the emerging technologies like <strong>Angular Js</strong>, <strong>React Js</strong>, <strong>Ember Js</strong> and also functional, object oriented javascript programming and various API's documentation.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <span class="glyphicon glyphicon-eye-open"></span>
+                    <h3>Databases</h3>
+                    <p>I have learnt relational databases back in 2014, but not in touch from a long time. So this year, I will also focus on creating and manging databases especially non-relational ones. There are tons of now, but I will focus on <strong>MongoDB</strong> and <strong>Mongoose</strong></p>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <!-- END-OF-USING-GRID-->
+    <!-- FOOTER-->
+    <footer>
+        <div class="container">
+            <h3>Get in touch</h3>
+            <p>It's not possible for me and you to stay in touch foreverm however you can contact me on twitter <a href="http://twitter.com/srrohitkandpal">Follow Me</a></p>
+        </div>    
+    </footer>    
+    <!-- END-OF-FOOTER-->
 
 
   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
